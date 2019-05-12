@@ -2,6 +2,13 @@
 
 My plex installation, based on docker.
 
+## get plex claim
+
+https://www.plex.tv/claim/
+
+```
+echo "PASTE YOUR CODE HERE" > plex_claim
+```
 
 ## usage
 ```
