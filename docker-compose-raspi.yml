@@ -11,8 +11,7 @@ services:
       - VERSION=docker
       - UMASK_SET=022 #optional
     volumes:
-      - /path/to/library:/config
-      - path/to/tvseries:/tv
-      - /path/to/movies:/movies
-      - /path for transcoding:/transcode
+      - /media/plex/config:/config
+      - /media/plex/transcode:/transcode
+      - /media/plex:/data
     restart: unless-stopped
