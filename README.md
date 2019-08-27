@@ -12,8 +12,8 @@ echo "PASTE YOUR CODE HERE" > plex_claim
 
 ## usage
 ```
+./start.sh <macos|raspi>
 ./clean.sh
-./start.sh
 ./stop.sh
 ```
 
