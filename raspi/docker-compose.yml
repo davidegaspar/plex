@@ -13,8 +13,8 @@ services:
       - UMASK_SET=022 #optional
       - PLEX_CLAIM="${PLEX_CLAIM}" # https://www.plex.tv/claim/
     volumes:
-      - /media/plex/config:/config
-      - /media/plex/transcode:/transcode
+      # - /media/plex/config:/config
+      # - /media/plex/transcode:/transcode
       - /media/plex:/data
     ports:
       - "32400:32400/tcp"
