@@ -19,3 +19,11 @@ echo "PASTE YOUR CODE HERE" > plex_claim
 
 ## access
 [ui](http://127.0.0.1:32400/web/index.html)
+
+## mount usb (FAT)
+```sh
+sudo blkid
+sudo mkdir /media/plex
+sudo mount /dev/sda2 /media/plex
+ls -latr /media/plex
+```
