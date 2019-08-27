@@ -5,7 +5,7 @@ services:
     image: linuxserver/plex:arm32v7-latest
     container_name: plex
     # network_mode: host
-    privileged: true
+    # privileged: true
     environment:
       - PUID=1000
       - PGID=1000
