@@ -2,12 +2,13 @@
 
 My plex installation, based on docker.
 
-## get plex claim
+## setup
 
 https://www.plex.tv/claim/
 
 ```
 echo "PASTE YOUR CODE HERE" > plex_claim
+echo "PATH TO DATA HERE" > data
 ```
 
 ## usage
