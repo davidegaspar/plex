@@ -4,8 +4,6 @@ services:
   plex:
     image: linuxserver/plex:arm32v7-latest
     container_name: plex
-    # network_mode: host
-    # privileged: true
     environment:
       - PUID=1000
       - PGID=1000
@@ -15,7 +13,7 @@ services:
     volumes:
       - /media/plex/config:/config
       - /media/plex/transcode:/transcode
-      - /media/plex:/data
+      - /media/plex/data:/data
     ports:
       - "32400:32400/tcp"
       - "3005:3005/tcp"

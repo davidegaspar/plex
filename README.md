@@ -38,3 +38,9 @@ cp /etc/fstab /etc/fstab.backup
 ```
 scp -Cr <source> root@plexberry.local:/media/plex/data
 ```
+
+## setup plex
+```
+ssh root@plexberry -L 8888:localhost:32400
+http://localhost:8888/web
+```
