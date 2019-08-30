@@ -21,10 +21,20 @@ echo "PATH TO DATA HERE" > data
 ## access
 [ui](http://127.0.0.1:32400/web/index.html)
 
-## mount usb (FAT)
-```sh
-sudo blkid
-sudo mkdir /media/plex
-sudo mount /dev/sda2 /media/plex
-ls -latr /media/plex
+## raspi setup usb
+```
+sudo su
+blkid
+umount /dev/sda2
+mkdir -p /media/plex/
+mkfs.ext4 /dev/sda2 -L plex64
+mount -t ext4 /dev/sda2 /media/plex
+mkdir -p /media/plex/data
+cp /etc/fstab /etc/fstab.backup
+/dev/sda2 /media/plexk ext4 rw,defaults 0 0
+```
+
+## raspi send files to usb
+```
+scp -Cr <source> root@plexberry.local:/media/plex/data
 ```
