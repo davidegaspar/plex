@@ -43,8 +43,8 @@ mkdir -p /media/plex/data
 
 ## raspi send files to usb
 ```
-cd <source>
-rsync --dry-run -rtzhi --ignore-existing . root@plexberry.local:/media/plex/data/
+cd tvshows
+rsync --dry-run -rtzhi --ignore-existing . root@plexberry.local:/media/plex/data/tvshows
 ```
 
 ## setup plex
