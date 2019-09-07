@@ -22,6 +22,7 @@ echo "PATH TO DATA HERE" > data
 [ui](http://127.0.0.1:32400/web/index.html)
 
 ## raspi setup usb
+
 ```
 sudo su
 blkid
@@ -29,14 +30,21 @@ umount /dev/sda2
 mkdir -p /media/plex/
 mkfs.ext4 /dev/sda2 -L plex64
 mount -t ext4 /dev/sda2 /media/plex
-mkdir -p /media/plex/data
+```
+```
 cp /etc/fstab /etc/fstab.backup
-/dev/sda2 /media/plexk ext4 rw,defaults 0 0
+nano /etc/fstab
+# add this
+/dev/sda2 /media/plex ext4 rw,defaults 0 0
+```
+```
+mkdir -p /media/plex/data
 ```
 
 ## raspi send files to usb
 ```
-scp -Cr <source> root@plexberry.local:/media/plex/data
+cd <source>
+rsync --dry-run -rtzhi --ignore-existing . root@plexberry.local:/media/plex/data/
 ```
 
 ## setup plex
