@@ -7,7 +7,7 @@ docker run \
   -e PGID=0 \
   -e VERSION=docker \
   -e UMASK_SET=022 \
-  -e PLEX_CLAIM="${PLEX_CLAIM}" \
+  -e PLEX_CLAIM="$(cat plex_claim)" \
   -v /plex/config:/config \
   -v /plex/transcode:/transcode \
   -v /plex/data:/data \
