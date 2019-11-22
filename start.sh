@@ -8,9 +8,9 @@ docker run \
   -e VERSION=docker \
   -e UMASK_SET=022 \
   -e PLEX_CLAIM="${PLEX_CLAIM}" \
-  -v /media/plex/config:/config \
-  -v /media/plex/transcode:/transcode \
-  -v /media/plex/data:/data \
+  -v /plex/config:/config \
+  -v /plex/transcode:/transcode \
+  -v /plex/data:/data \
   -p "32400:32400/tcp" \
   -p "3005:3005/tcp" \
   -p "8324:8324/tcp" \

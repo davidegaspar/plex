@@ -7,6 +7,7 @@ My plex installation, based on docker.
 https://www.plex.tv/claim/
 
 ```
+mkdir /plex
 echo "PASTE YOUR CODE HERE" > plex_claim
 echo "PATH TO DATA HERE" > data
 ```
