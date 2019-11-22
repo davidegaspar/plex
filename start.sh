@@ -1,7 +1,7 @@
 set -ex
 
 docker run \
-  - d \
+  -d \
   --name plx \
   -e PUID=0 \
   -e PGID=0 \
