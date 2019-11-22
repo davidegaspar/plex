@@ -20,7 +20,7 @@ docker run \
   -p "32412:32412/udp" \
   -p "32413:32413/udp" \
   -p "32414:32414/udp" \
-  --restart unless-stopped
-  linuxserver/plex:arm32v7-latest \
+  --restart unless-stopped \
+  linuxserver/plex:arm32v7-latest
 
 docker logs -f plx
