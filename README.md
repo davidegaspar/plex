@@ -11,7 +11,11 @@ echo "PASTE YOUR CODE HERE" > plex_claim
 echo "PATH TO DATA HERE" > data
 ```
 
-## usage
+## usage (docker run)
+```
+```
+
+## usage (docker-compose)
 ```
 ./start.sh <macos|raspi>
 ./clean.sh <macos|raspi>
