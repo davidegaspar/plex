@@ -1,8 +1,8 @@
-# plex
+# Plex + Docker + Pi
 
 Plex setup in the raspberry pi with docker.
 
-## setup
+## Setup
 
 #### 1. create media directory
 ```
@@ -32,11 +32,18 @@ open http://localhost:8888/web
 # follow instructions
 ```
 
-#### 6. send files
+#### 6. sync files
 ```
 rsync --dry-run -vrtzhi --progress --delete --ignore-existing . root@<ip or address>:/plex/data/
 ```
 
-## docs
+## Usage
+
+```
+./start
+./stop
+```
+
+## Docs
 
 - https://support.plex.tv/articles/200288586-installation
